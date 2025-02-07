@@ -1,0 +1,75 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Container principal */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Zone de recherche */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+/* Zone météo */
+.weather-box {
+    text-align: center;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info p {
+    margin: 10px 0;
+    color: #666;
+}
+
+#city {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style des valeurs */
+#temperature, #description, #wind-speed {
+    color: #4CAF50;
+    font-weight: bold;
+}

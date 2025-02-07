@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Météo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ma Météo</h1>
+        
+        <!-- Zone de recherche -->
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Entrez une ville...">
+            <button id="search-button">Rechercher</button>
+        </div>
+
+        <!-- Affichage de la météo -->
+        <div class="weather-box">
+            <h2 id="city">--</h2>
+            <div class="weather-info">
+                <p>Température: <span id="temperature">--</span>°C</p>
+                <p>Description: <span id="description">--</span></p>
+                <p>Vent: <span id="wind-speed">--</span> km/h</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
