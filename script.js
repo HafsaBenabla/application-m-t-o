@@ -14,15 +14,12 @@ async function getWeatherData(city) {
     try {
         // Faire la requête à l'API
         const response = await fetch(`${API_URL}/${city}`);
-        
         // Vérifier si la requête a réussi
         if (!response.ok) {
-            throw new Error('Ville non trouvée');
+         return alert('Ville non trouvée'); 
         }
-
         // Convertir la réponse en JSON
         const data = await response.json();
-        
         // Mettre à jour l'interface
         updateUI(data, city);
     } catch (error) {
@@ -68,5 +65,5 @@ searchInput.addEventListener('keypress', (event) => {
 
 // Charger Paris au démarrage
 document.addEventListener('DOMContentLoaded', () => {
-    getWeatherData('Paris');
+    getWeatherData('Casablanca');
 });
